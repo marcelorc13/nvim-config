@@ -2,6 +2,7 @@ require("config.lazy")
 require("config.keymaps")
 
 vim.cmd[[colorscheme evergarden]]
+
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.wrap = false
