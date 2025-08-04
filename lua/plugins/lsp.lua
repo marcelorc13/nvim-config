@@ -47,6 +47,18 @@ return {
 							},
 						}
 					}
+				},
+				pyright = {
+					settings = {
+						python = {
+							analysis = {
+								autoSearchPaths = true,
+								diagnosticMode = "workspace", -- "openFilesOnly" se quiser menos intenso
+								useLibraryCodeForTypes = true,
+								typeCheckingMode = "basic", -- "off", "basic" ou "strict"
+							}
+						}
+					}
 				}
 			}
 
