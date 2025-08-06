@@ -21,6 +21,7 @@ require("lazy").setup({
   require("plugins.lsp"),
   require("plugins.colorscheme"),
   require("plugins.mini"),
+  require("plugins.cmp"),
   {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.8",

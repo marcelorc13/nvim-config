@@ -53,13 +53,14 @@ return {
 						python = {
 							analysis = {
 								autoSearchPaths = true,
-								diagnosticMode = "workspace", -- "openFilesOnly" se quiser menos intenso
+								diagnosticMode = "workspace",
 								useLibraryCodeForTypes = true,
-								typeCheckingMode = "basic", -- "off", "basic" ou "strict"
+								typeCheckingMode = "basic",
 							}
 						}
 					}
-				}
+				},
+				tinymist = {}	
 			}
 
 			for server, config in pairs(servers) do

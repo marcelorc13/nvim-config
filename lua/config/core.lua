@@ -5,6 +5,7 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt.sidescrolloff = 8
 
+vim.opt.winborder = "rounded"
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 2
 vim.opt.smartindent = true
