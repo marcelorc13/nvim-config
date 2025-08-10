@@ -23,6 +23,16 @@ return {
 				map("n", "<leader>rn", vim.lsp.buf.rename, "Renomear")
 				map("n", "<leader>ca", vim.lsp.buf.code_action, "Code Action")
 				map("n", "<leader>f", function() vim.lsp.buf.format { async = true } end, "Formatar")
+
+				vim.api.nvim_create_autocmd("BufWritePre", {
+					pattern = { "*.ts", "*.tsx", "*.js", "*.jsx" },
+					callback = function()
+						vim.lsp.buf.code_action({
+							context = { only = { "source.organizeImports" } },
+							apply = true,
+						})
+					end,
+				})
 			end
 
 			local servers = {
@@ -60,7 +70,11 @@ return {
 						}
 					}
 				},
-				tinymist = {}	
+				tinymist = {},
+				ts_ls = {
+					settings = {},
+					filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript", "javascriptreact" },
+				},
 			}
 
 			for server, config in pairs(servers) do
