@@ -40,7 +40,6 @@ return {
       },
     })
 
-    -- Keybind para abrir o explorer com <leader>e
     vim.keymap.set("n", "<leader>je", ":NvimTreeToggle<CR>", { desc = "Toggle NvimTree" })
   end,
 }

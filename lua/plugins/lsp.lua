@@ -20,9 +20,9 @@ return {
 				map("n", "gd", vim.lsp.buf.definition, "Ir para definição")
 				map("n", "K", vim.lsp.buf.hover, "Hover")
 				map("n", "gr", vim.lsp.buf.references, "Referências")
-				map("n", "<leader>rn", vim.lsp.buf.rename, "Renomear")
+				map("n", "<leader>rr", vim.lsp.buf.rename, "Renomear")
 				map("n", "<leader>ca", vim.lsp.buf.code_action, "Code Action")
-				map("n", "<leader>f", function() vim.lsp.buf.format { async = true } end, "Formatar")
+				map("n", "<leader><C-f>", function() vim.lsp.buf.format { async = true } end, "Formatar")
 
 				vim.api.nvim_create_autocmd("BufWritePre", {
 					pattern = { "*.ts", "*.tsx", "*.js", "*.jsx" },
