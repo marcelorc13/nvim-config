@@ -23,6 +23,7 @@ require("lazy").setup({
 	require("plugins.mini"),
 	require("plugins.cmp"),
 	require("plugins.nvim-tree"),
+	require("plugins.treesitter"),
 	{
 		"lewis6991/gitsigns.nvim",
 		config = function()
