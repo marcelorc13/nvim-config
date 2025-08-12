@@ -26,3 +26,13 @@ vim.keymap.set('n', '<leader>s', '<cmd> so <CR>', opts)
 vim.keymap.set('n', '<leader><Tab>', '<cmd> bn <CR>', opts) 
 vim.keymap.set('n', '<leader><S-Tab>', '<cmd> bp <CR>', opts) 
 
+vim.keymap.set('n', '<leader>bd', '<cmd> bd! <CR>', opts) 
+
+vim.keymap.set('n', '<leader>sh', '<cmd> split <CR>', opts) 
+vim.keymap.set('n', '<leader>sv', '<cmd> vsplit <CR>', opts) 
+
+vim.keymap.set('n', '<C-h>', '<C-w>h', opts) 
+vim.keymap.set('n', '<C-j>', '<C-w>j', opts) 
+vim.keymap.set('n', '<C-k>', '<C-w>k', opts) 
+vim.keymap.set('n', '<C-l>', '<C-w>l', opts) 
+
