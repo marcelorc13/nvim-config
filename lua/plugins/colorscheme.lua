@@ -3,7 +3,7 @@ return {
 	priority = 1000,
 	opts = {
 		theme = {
-			variant = 'fall', -- 'winter'|'fall'|'spring'|'summer'
+			variant = 'winter', -- 'winter'|'fall'|'spring'|'summer'
 			accent = 'green',
 		},
 		editor = {

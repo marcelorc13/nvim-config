@@ -8,7 +8,7 @@ return {
 		},
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "gopls" },
+				ensure_installed = { "lua_ls", "gopls", "templ",  "ts_ls", "pyright", "tinymist"},
 			})
 
 			local lspconfig = require("lspconfig")
@@ -34,6 +34,8 @@ return {
 					end,
 				})
 			end
+
+			local util = require("lspconfig.util")
 
 			local servers = {
 				lua_ls = {
@@ -71,35 +73,15 @@ return {
 					}
 				},
 				tinymist = {},
-
 				ts_ls = {
 					settings = {},
 					filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript", "javascriptreact" },
 				},
-				tmpl = {
-					settings = {},
+				templ = {
 					filetypes = { "templ" },
+					root_dir = util.root_pattern("go.mod", ".git"),
+					settings = {},
 				},
-				sqls = {
-					settings = {
-						sqls = {
-							lowerCaseKeywords = false,
-							format = {
-								enable = true,
-								indentSize = 2,
-								alignColumnDefinitionsInCreateTable = true,
-							},
-							lint = {
-								enable = true,
-								severity = "warning",
-							},
-							completion = {
-								enable = true,
-								caseSensitive = "preserve",
-							},
-						}
-					}
-				}
 			}
 
 			for server, config in pairs(servers) do

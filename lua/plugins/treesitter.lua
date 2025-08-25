@@ -7,7 +7,7 @@ return {
         ensure_installed = {
           "javascript", "typescript", "tsx", "html", "css", "json",
           "go", "gomod", "gowork", "gosum",
-          "lua", "vim", "vimdoc"
+          "lua", "vim", "vimdoc", "templ", "python", "sql"
         },
         highlight = {
           enable = true,
@@ -19,13 +19,6 @@ return {
           enable = true,
         },
       }
-    end,
-  },
-  {
-    "windwp/nvim-ts-autotag",
-    dependencies = { "nvim-treesitter/nvim-treesitter" },
-    config = function()
-      require("nvim-ts-autotag").setup()
     end,
   },
 }
