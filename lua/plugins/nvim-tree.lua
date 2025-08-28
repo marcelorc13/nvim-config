@@ -5,6 +5,13 @@ return {
   },
   config = function()
     require("nvim-tree").setup({
+	  actions = {
+		open_file = {
+		  window_picker = {
+			enable = false,
+		  },
+		},
+	  },
       view = {
 		float = {
           enable = true,
