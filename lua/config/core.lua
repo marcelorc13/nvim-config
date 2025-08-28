@@ -35,8 +35,7 @@ vim.opt.incsearch = true
 local modeShower =
 "%{mode() == 'n' ? 'N' : mode() == 'i' ? 'I' : mode() == 'i' ? 'I' : mode() == 'c' ? 'C' : mode() == 't' ? 'TERM' : mode()} "
 
-vim.opt.statusline = modeShower .. " %f  %= %y"
-
+vim.opt.statusline = modeShower .. " %f  %= %t %y"
 
 vim.api.nvim_set_hl(0, "StatusLine", { bg= "#1d2021" })
 
