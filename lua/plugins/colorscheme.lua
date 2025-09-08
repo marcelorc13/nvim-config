@@ -1,5 +1,6 @@
 return {
-	'everviolet/nvim', name = 'evergarden',
+	'everviolet/nvim',
+	name = 'evergarden',
 	priority = 1000,
 	opts = {
 		theme = {
@@ -7,7 +8,7 @@ return {
 			accent = 'green',
 		},
 		editor = {
-			transparent_background = false,
+			transparent_background = true,
 			sign = { color = 'none' },
 			float = {
 				color = 'mantle',
@@ -17,5 +18,11 @@ return {
 				color = 'surface0',
 			},
 		},
+	},
+
+	{
+		'sainnhe/gruvbox-material',
+		lazy = false,
+		priority = 1000,
 	}
 }
