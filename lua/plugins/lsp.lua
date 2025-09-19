@@ -8,7 +8,7 @@ return {
 		},
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "gopls", "templ",  "ts_ls", "pyright", "tinymist"},
+				ensure_installed = { "lua_ls", "gopls", "templ", "ts_ls", "pyright", "tinymist" },
 			})
 
 			local lspconfig = require("lspconfig")
@@ -17,9 +17,9 @@ return {
 				local map = function(mode, lhs, rhs, desc)
 					vim.keymap.set(mode, lhs, rhs, { buffer = bufnr, desc = desc })
 				end
-				map("n", "gd", vim.lsp.buf.definition, "Ir para definição")
 				map("n", "K", vim.lsp.buf.hover, "Hover")
 				map("n", "gr", vim.lsp.buf.references, "Referências")
+				map("n", "gd", vim.lsp.buf.definition, "Ir para definição")
 				map("n", "<leader>rr", vim.lsp.buf.rename, "Renomear")
 				map("n", "<leader>ca", vim.lsp.buf.code_action, "Code Action")
 				map("n", "<leader>F", function() vim.lsp.buf.format { async = true } end, "Formatar")
