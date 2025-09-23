@@ -8,7 +8,7 @@ return {
 		},
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "gopls", "templ",  "ts_ls", "pyright", "tinymist"},
+				ensure_installed = { "lua_ls", "gopls", "templ",  "ts_ls", "pyright", "tinymist", "yamlls"},
 			})
 
 			local lspconfig = require("lspconfig")
@@ -80,6 +80,10 @@ return {
 				templ = {
 					filetypes = { "templ" },
 					root_dir = util.root_pattern("go.mod", ".git"),
+					settings = {},
+				},
+				yamlls = {
+					filetypes = { "yaml" },
 					settings = {},
 				},
 			}
