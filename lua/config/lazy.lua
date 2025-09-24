@@ -38,5 +38,10 @@ require("lazy").setup({
 			require('tiny-inline-diagnostic').setup()
 			vim.diagnostic.config({ virtual_text = false }) -- Disable default virtual text
 		end
+	},
+	{
+		"nvim-treesitter/nvim-treesitter",
+		dependencies = { "OXY2DEV/markview.nvim" },
+		lazy = false,
 	}
 })
