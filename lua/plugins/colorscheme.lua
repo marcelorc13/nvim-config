@@ -24,5 +24,11 @@ return {
 		'sainnhe/gruvbox-material',
 		lazy = false,
 		priority = 1000,
-	}
+	},
+	{
+		'rebelot/kanagawa.nvim',
+		lazy = false,
+		priority = 1000,
+	},
 }
+

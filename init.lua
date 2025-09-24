@@ -2,4 +2,4 @@ require("config.lazy")
 require("config.keymaps")
 require("config.core")
 
-vim.cmd([[colorscheme gruvbox-material]])
+vim.cmd([[colorscheme kanagawa]])
