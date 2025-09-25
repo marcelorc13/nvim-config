@@ -43,5 +43,11 @@ require("lazy").setup({
 		"nvim-treesitter/nvim-treesitter",
 		dependencies = { "OXY2DEV/markview.nvim" },
 		lazy = false,
+	},
+	{
+		"vinnymeller/swagger-preview.nvim",
+		cmd = { "SwaggerPreview", "SwaggerPreviewStop", "SwaggerPreviewToggle" },
+		build = "npm i",
+		config = true,
 	}
 })
