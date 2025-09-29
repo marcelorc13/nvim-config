@@ -15,7 +15,7 @@ if not vim.uv.fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
-vim.g.mapleader = " " -- Agora posicionado corretamente
+vim.g.mapleader = " "
 
 require("lazy").setup({
 	require("plugins.lsp"),
@@ -24,6 +24,7 @@ require("lazy").setup({
 	require("plugins.cmp"),
 	require("plugins.nvim-tree"),
 	require("plugins.treesitter"),
+	require("plugins.alpha"),
 	{
 		"lewis6991/gitsigns.nvim",
 		config = function()
