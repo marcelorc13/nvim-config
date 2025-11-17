@@ -25,7 +25,7 @@ vim.opt.hidden = true
 vim.opt.termguicolors = true
 vim.opt.mouse = "a"
 vim.opt.encoding = "UTF-8"
-vim.opt.clipboard:append("unnamedplus")
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true

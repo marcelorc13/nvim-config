@@ -9,8 +9,11 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz', opts)
 vim.keymap.set('n', '<C-o>', 'i<CR><Esc>O', opts)
 
 vim.keymap.set('n', '<CR>', 'o<Esc>', opts)
-vim.keymap.set('n', '<Tab>', 'I<Tab><Esc>', opts)
-vim.keymap.set('n', '<S-Tab>', 'I<BS><Esc>', opts)
+vim.keymap.set('n', '<Tab>', '>>', opts)
+vim.keymap.set('n', '<S-Tab>', '<<', opts)
+
+vim.keymap.set('v', '<Tab>', '>', opts)
+vim.keymap.set('v', '<S-Tab>', '<', opts)
 
 vim.keymap.set('n', '<leader>w', '<cmd> w <CR>', opts)
 vim.keymap.set('n', '<leader>W', '<cmd> wq <CR>', opts)
