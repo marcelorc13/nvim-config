@@ -22,9 +22,9 @@ require("lazy").setup({
 	require("plugins.colorscheme"),
 	require("plugins.mini"),
 	require("plugins.cmp"),
-	require("plugins.nvim-tree"),
 	require("plugins.treesitter"),
 	require("plugins.alpha"),
+	require("plugins.oil"),
 	{
 		"lewis6991/gitsigns.nvim",
 		config = function()

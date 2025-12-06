@@ -33,7 +33,7 @@ return{
 				"   |____|   |___|/  \\|___||___|/  |____| \\|____|      |____|/  ",
 				"                                                               ", }
 			theme.section.buttons.val = {
-				theme.button("e", " Open project", ":NvimTreeToggle <CR>"),
+				theme.button("e", " Open project", ":Oil <CR>"),
 				theme.button("f", " New file", ":lua require('utils.new_file').create_and_open_file() <CR>"),
 				theme.button("c", " Settings (.config/nvim)",
 					":lua require('nvim-tree.api').tree.open({ path = vim.fn.stdpath('config') }) <CR>"),
