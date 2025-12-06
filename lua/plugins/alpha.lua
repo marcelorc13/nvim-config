@@ -5,7 +5,6 @@ return{
 			require('alpha').setup(require 'alpha.themes.dashboard'.config)
 			local theme = require("alpha.themes.dashboard")
 
-			local new_file_utils = require("utils.new_file")
 
 			theme.section.header.val = {
 				"                                                               ",
@@ -32,12 +31,6 @@ return{
 				"   |    |/ \\|   || \\ |   ||   | / |    || |    |      |    | / ",
 				"   |____|   |___|/  \\|___||___|/  |____| \\|____|      |____|/  ",
 				"                                                               ", }
-			theme.section.buttons.val = {
-				theme.button("e", " Open project", ":Oil <CR>"),
-				theme.button("f", " New file", ":lua require('utils.new_file').create_and_open_file() <CR>"),
-				theme.button("c", " Settings (.config/nvim)",
-					":lua require('nvim-tree.api').tree.open({ path = vim.fn.stdpath('config') }) <CR>"),
-				theme.button("q", "󰗽 Quit", ":q <CR>")
-			}
+			theme.section.buttons.val = {}
 		end
 }
