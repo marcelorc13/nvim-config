@@ -37,18 +37,7 @@ require("lazy").setup({
 		priority = 1000,
 		config = function()
 			require('tiny-inline-diagnostic').setup()
-			vim.diagnostic.config({ virtual_text = false }) -- Disable default virtual text
+			vim.diagnostic.config({ virtual_text = false })
 		end
-	},
-	{
-		"nvim-treesitter/nvim-treesitter",
-		dependencies = { "OXY2DEV/markview.nvim" },
-		lazy = false,
-	},
-	{
-		"vinnymeller/swagger-preview.nvim",
-		cmd = { "SwaggerPreview", "SwaggerPreviewStop", "SwaggerPreviewToggle" },
-		build = "npm i",
-		config = true,
 	}
 })
