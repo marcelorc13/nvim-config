@@ -20,11 +20,11 @@ vim.g.mapleader = " "
 require("lazy").setup({
 	require("plugins.lsp"),
 	require("plugins.colorscheme"),
-	require("plugins.mini"),
 	require("plugins.cmp"),
 	require("plugins.treesitter"),
 	require("plugins.alpha"),
 	require("plugins.oil"),
+	require("plugins.telescope"),
 	{
 		"lewis6991/gitsigns.nvim",
 		config = function()
