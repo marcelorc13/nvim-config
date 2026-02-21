@@ -91,10 +91,11 @@ return {
 				yamlls = {
 					filetypes = { "yaml" },
 				},
+				ruby_lsp = {},
 			}
 
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "gopls", "templ", "ts_ls", "pyright", "tinymist", "yamlls" },
+				ensure_installed = { "lua_ls", "gopls", "templ", "ts_ls", "pyright", "tinymist", "yamlls", "ruby_lsp" },
 				handlers = {
 					function(server_name)
 						local server_config = servers[server_name] or {}
