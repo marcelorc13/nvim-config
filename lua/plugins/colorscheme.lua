@@ -30,5 +30,19 @@ return {
 		lazy = false,
 		priority = 1000,
 	},
+	{
+		"vague-theme/vague.nvim",
+		lazy = false,
+		priority = 1000,
+	},
+	{
+		"xero/miasma.nvim",
+		lazy = false,
+		priority = 1000,
+	},
+	{
+		"rose-pine/neovim",
+		name = "rose-pine",
+		priority = 1000,
+	}
 }
-

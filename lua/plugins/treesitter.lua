@@ -1,7 +1,9 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
+	branch = 'master',
     build = ":TSUpdate",
+	main = 'nvim-treesitter.config',
     config = function()
       require("nvim-treesitter.configs").setup {
         ensure_installed = {
@@ -9,6 +11,7 @@ return {
           "go", "gomod", "gowork", "gosum",
           "lua", "vim", "vimdoc", "templ", "python", "sql", "markdown", "markdown_inline"
         },
+		auto_install = true,
         highlight = {
           enable = true,
         },
