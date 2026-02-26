@@ -25,6 +25,7 @@ require("lazy").setup({
 	require("plugins.alpha"),
 	require("plugins.oil"),
 	require("plugins.telescope"),
+	require("plugins.windsurf"),
 	{
 		"lewis6991/gitsigns.nvim",
 		config = function()

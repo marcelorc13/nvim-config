@@ -33,7 +33,7 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 local modeShower =
-"%{mode() == 'n' ? 'N' : mode() == 'i' ? 'I' : mode() == 'i' ? 'I' : mode() == 'c' ? 'C' : mode() == 't' ? 'TERM' : mode()} "
+"%{mode() == 'n' ? 'N' : mode() == 'i' ? 'I' : mode() == 'c' ? 'C' : mode() == 't' ? 'TERM' : mode()} "
 
 vim.opt.statusline = modeShower .. " %f  %= %t %y"
 
